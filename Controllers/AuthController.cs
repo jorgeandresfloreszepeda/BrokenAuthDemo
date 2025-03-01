@@ -42,7 +42,7 @@ namespace BrokenAuthDemo.Controllers
             var username = HttpContext.Session.GetString("User");
             if (string.IsNullOrEmpty(username))
             {
-                return Unauthorized("No loggeado");
+                return Unauthorized("No loggeado tarea03");
             }
             return Ok($"Bienvenido, {username}");
         }
